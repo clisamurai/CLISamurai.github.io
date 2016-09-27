@@ -7,6 +7,9 @@ body {
 div.blurb, nav {
     font-style: italic;
 }
+nav {
+    margin-top: 2em;
+}
 header {
     overflow: auto;
     margin-top: 2em;
