@@ -15,7 +15,7 @@ h1 {
 header img {
     float: left;
     display: block;
-    height: 2.1em;
+    height:8.4em;
     padding-right: .25em;
 }
 @media screen and (max-width: 720px) {
