@@ -1,8 +1,6 @@
 @import 'https://fonts.googleapis.com/css?family=Libre+Baskerville';
 body {
     font-family: 'Libre Baskerville', serif;
-}
-main {
     margin: 0 auto;
     width: 60%;
 }
