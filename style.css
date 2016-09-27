@@ -1,6 +1,6 @@
-@import 'https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display';
+@import 'https://fonts.googleapis.com/css?family=Libre+Baskerville';
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Libre Baskerville', serif;
 }
 main {
     margin: 0 auto;
@@ -19,7 +19,6 @@ h1 {
     margin-left: 11rem;
     font-weight: bold;
     font-size: 4.5rem;
-    font-family: 'Playfair Display', serif;
     margin-top: 0.2rem;
     line-height: 0.99;
 }
