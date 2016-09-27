@@ -10,8 +10,10 @@ h1 {
     font-family: 'Playfair Display', serif;
     font-size: 4em;
     margin-bottom: 0.25em;
+	float: left;
 }
-h1 img {
+header img {
+	float: left;
 	height: 2.1em;
 	padding-right:.25em;
 }
