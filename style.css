@@ -17,8 +17,9 @@ img {
 h1 {
     margin-left: 11rem;
     font-weight: bold;
-    font-size: 3rem;
+    font-size: 4.5rem;
     font-family: 'Playfair Display', serif;
+    margin-top: -1rem;
 }
 
 @media screen and (max-width: 720px) {
