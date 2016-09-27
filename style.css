@@ -3,29 +3,27 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 main {
-	margin: 0 auto;
-	width: 60%;
+    margin: 0 auto;
+    width: 60%;
 }
 h1 {
     font-family: 'Playfair Display', serif;
     font-size: 4em;
     margin-bottom: 0.25em;
-	float: left;
+    float: left;
 }
 header img {
-	float: left;
-	display: block;
-	height: 2.1em;
-	padding-right:.25em;
+    float: left;
+    display: block;
+    height: 2.1em;
+    padding-right: .25em;
 }
-@media screen and (max-width: 720px){
-	main {
-		margin: 0 auto;
-		width: 100%;
-	}
-	
-	h1 img {
-		height: 3em;
-	}
-
+@media screen and (max-width: 720px) {
+    main {
+        margin: 0 auto;
+        width: 100%;
+    }
+    h1 img {
+        height: 3em;
+    }
 }
