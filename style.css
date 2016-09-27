@@ -6,21 +6,21 @@ main {
     margin: 0 auto;
     width: 60%;
 }
-h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: 4em;
-    margin-top:0;
-    padding-top:0;
-    margin-bottom: 0.25em;
-    float: left;
-    line-height:0.98em;
+header {
+    overflow: auto;
 }
-header img {
+img {
     float: left;
     display: block;
-    height:8.4em;
-    padding-right: .25em;
+    width: 3em;
 }
+h1 {
+    margin-left: 3.1em;
+    font-weight: bold;
+    font-size: 200%;
+    font-family: 'Playfair Display', serif;
+}
+
 @media screen and (max-width: 720px) {
     main {
         margin: 0 auto;
