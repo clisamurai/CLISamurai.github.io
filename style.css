@@ -26,7 +26,9 @@ h1 {
     margin-top: 1rem;
     line-height: 0.99;
 }
-
+footer {
+    margin-bottom: 1em;
+}
 @media screen and (max-width: 720px) {
     main {
         margin: 0 auto;
