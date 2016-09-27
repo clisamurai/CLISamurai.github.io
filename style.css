@@ -12,10 +12,10 @@ header {
 img {
     float: left;
     display: block;
-    width: 3rem;
+    width: 10rem;
 }
 h1 {
-    margin-left: 3.1rem;
+    margin-left: 11rem;
     font-weight: bold;
     font-size: 200%;
     font-family: 'Playfair Display', serif;
