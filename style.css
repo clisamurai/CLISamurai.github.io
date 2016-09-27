@@ -4,6 +4,9 @@ body {
     margin: 0 auto;
     width: 60%;
 }
+div.blurb, nav {
+    font-style: italic;
+}
 header {
     overflow: auto;
     margin-top: 2em;
