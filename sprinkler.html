@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sprinkler.app</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://bootswatch.com/cosmo/bootstrap.min.css">
+
+    <style>
+        .screen {
+            display: none;
+            max-width: 70%;
+            margin: 0 auto;
+        }
+
+        #home {
+            display: block;
+        }
+
+        #immediate>.btn {
+            margin-top: 5px;
+        }
+    </style>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+</head>
+
+<body>
+
+
+    <div class="navbar navbar-inverse">
+        <a class="navbar-brand return" href="#">Sprinkler.app</a>
+    </div>
+
+    <section class="screen" id="home">
+        <button type="button" class="btn btn-large btn-block btn-success btn-add"> <i class="glyphicon glyphicon-plus"></i> <br>Schedule Sprinkling</button>
+        <button type="button" class="btn btn-large btn-block btn-danger btn-delete"> <i class="glyphicon glyphicon-remove"></i> <br>Cancel Scheduled Sprinkling</button>
+        <br>
+        <button type="button" class="btn btn-large btn-block btn-primary btn-immediate"> <i class="glyphicon glyphicon-play-circle"></i> <br>Start/Stop Sprinkling</button>
+    </section>
+    <section class="screen" id="add">
+
+        <form action="" method="POST" role="form">
+            <legend>Schedule a sprinkler</legend>
+
+            <div class="form-group">
+                <label for="sprinkler">Sprinkler:</label>
+                <select class="form-control" id="sprinkler">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                    </select>
+            </div>
+            <div class="form-group">
+                <label for="day">Day:</label>
+                <select class="form-control" id="day">
+                        <option>Monday</option>
+                        <option>Tuesday</option>
+                        <option>Wednesday</option>
+                        <option>Thursday</option>
+                        <option>Friday</option>
+                        <option>Saturday</option>
+                        <option>Sunday</option>
+                    </select>
+            </div>         
+            <div class="form-group">
+                <label for="inputTime" class="control-label">Time:</label>
+                <input type="time" id="inputTime" class="form-control" value="" required="required" title="">
+            </div>
+            <div class="form-group">
+                <label for="inputTime2RunFor" class="control-label">Time to run for (in minutes):</label>
+                <input type="number" id="inputTime2RunFor" class="form-control" min="0" max="1440" step="10" value="30" required="required" >
+            </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+
+    </section>
+    <section class="screen" id="delete">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <b>Sprinkler: </b>3<br>
+                <b>Day of the week: </b>Monday<br>
+                <b>Time: </b>10:30pm<br>
+                <b>Time to run for: </b>15 minutes<br><br>
+                <button type="button" class="btn btn-danger btn-sm">Cancel this sprinkler run</button>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <b>Sprinkler: </b>4<br>
+                <b>Day of the week: </b>Thursday<br>
+                <b>Time: </b>9:30pm<br>
+                <b>Time to run for: </b>15 minutes<br><br>
+                <button type="button" class="btn btn-danger btn-sm">Cancel this sprinkler run</button>
+            </div>
+        </div>
+    </section>
+    <section class="screen" id="immediate">
+
+        <h3>Turn On</h3>
+        <button type="button" class="btn btn-success">1</button>
+        <button type="button" class="btn btn-success">2</button>
+        <button type="button" class="btn btn-success">3</button>
+        <button type="button" class="btn btn-success">4</button>
+        <button type="button" class="btn btn-success">5</button>
+        <button type="button" class="btn btn-success">6</button>
+        <button type="button" class="btn btn-success">7</button>
+        <h3>Turn Off</h3>
+        <button type="button" class="btn btn-danger">1</button>
+        <button type="button" class="btn btn-danger">2</button>
+        <button type="button" class="btn btn-danger">3</button>
+        <button type="button" class="btn btn-danger">4</button>
+        <button type="button" class="btn btn-danger">5</button>
+        <button type="button" class="btn btn-danger">6</button>
+        <button type="button" class="btn btn-danger">7</button>
+
+    </section>
+    <!-- jQuery -->
+    <script src="//code.jquery.com/jquery.js"></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script>
+        $(".btn-add").click(function() {
+            $("#home").hide();
+            $("#add").show();
+        });
+        $(".btn-delete").click(function() {
+            $("#home").hide();
+            $("#delete").show();
+        });
+        $(".btn-immediate").click(function() {
+            $("#home").hide();
+            $("#immediate").show();
+        });
+        $(".return").click(function() {
+            $("#add").hide();
+            $("#delete").hide();
+            $("#immediate").hide();
+            $("#home").show();
+        });
+    </script>
+</body>
+
+</html>
