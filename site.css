@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Lora:400,700,600i');
+@import url('normalize.css');
+@import url('skeleton.css');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lora', serif;
+}
+
+header, footer {
+    text-align: center;
+    padding: 2em;
+    background-color: #00356F;
+    color: white;
+}
+
+header h1 {
+    margin-bottom: 0;
+}
+
+main {
+    padding-top: 2em !important;
+}
+
+.lead {
+    font-family: 'Lora', sans-serif;
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+a { 
+    color: #00356F;
+    text-decoration: unset;
+    font-style: italic;
+}
+
+.head {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    color: #00356F;
+    border: 1px solid #00356F;
+    padding: 0.5em;
+    margin-bottom: 0;
+}
+.title, .institution {
+    font-size: 1.7rem;
+    margin-bottom: 0;
+}
+.company, .qualification {
+    color: rgba(0,0,0,0.6);
+}
+.blurb {
+    padding-top: 0.5em;
+    margin-bottom: 0;
+}
+article {
+    padding: 1em 0;
+    border-bottom: 1px dashed #00356F;
+}
+article:last-of-type {
+    border-bottom: 0;
+}
+.qualification a {
+    font-style: normal;
+}
+a.button {
+    margin-top: 1em;
+    margin-bottom: 0;
+    font-style: normal;
+    width: 100%;
+    border-radius: 0;
+}
+blockquote {
+    margin: 0;
+    font-family: Lora, serif;
+    font-style: italic;
+    font-size: 3rem;
+}
+.pic {
+    border: 1px solid #00356F;
+
+}
+.small {
+    font-size: 0.7rem;
+}
