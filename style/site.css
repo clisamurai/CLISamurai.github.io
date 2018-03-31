@@ -37,6 +37,11 @@ a {
     text-decoration: unset;
     font-style: italic;
 }
+@media (max-width: 750px) {
+    .pic {
+        display:none;
+    }
+}
 
 .head {
     text-align: center;
