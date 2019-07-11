@@ -59,9 +59,13 @@ a {
 .company, .qualification {
     color: rgba(0,0,0,0.6);
 }
-.blurb {
+.blurb, .strong {
     padding-top: 0.5em;
     margin-bottom: 0;
+}
+.strong {
+    margin-bottom: -0.5em;
+    font-weight: 700;
 }
 article {
     padding: 1em 0;
