@@ -97,3 +97,13 @@ blockquote {
 .small {
     font-size: 0.7rem;
 }
+
+ul {
+    padding-top: 0.5em;
+}
+li {
+    margin-top:0;
+    list-style-position: outside;
+    padding-left: 3em;
+    list-style-type: square;
+}
