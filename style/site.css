@@ -104,6 +104,6 @@ ul {
 li {
     margin-top:0;
     list-style-position: outside;
-    padding-left: 3em;
+    margin-left: 3em;
     list-style-type: square;
 }
