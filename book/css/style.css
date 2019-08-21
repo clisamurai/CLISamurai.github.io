@@ -1,0 +1,56 @@
+@font-face {
+  font-family: 'LeagueSpartan';
+  src: url('leaguespartan-bold.woff') format('woff');
+}
+@import url('https://fonts.googleapis.com/css?family=Source+Serif+Pro');
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: LeagueSpartan, Helvetica, Arial, sans-serif;
+}
+body, h2.subtitle {
+    font-family: 'Source Serif Pro', serif;
+}
+
+article p, p.biography {
+  text-align: justify;
+  padding-bottom: 1em;
+}
+
+.quote {
+  border-left-color: grey;
+  border-left-width: 0.5em;
+  border-left-style: solid;
+  padding: 2em;
+  text-align: justify;
+  margin-bottom: 1em;
+}
+cite {
+  display: block;
+text-align: right;
+}
+
+p.biography {
+  font-size: 0.8em;
+  font-style: italic;
+}
+
+.author .name {
+  margin-top: 1em;
+  text-align: center;
+}
+.button.is-fullwidth {
+  margin-bottom: 0.5em;
+}
+
+li span.tag {
+  margin-left: 1em;
+}
+.nextprev p{
+  text-align: center;
+}
+.recommendations li {
+  padding-bottom: 1em;
+}
+article.bibliography p {
+  text-align: left;
+}
