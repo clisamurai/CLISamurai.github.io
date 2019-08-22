@@ -53,4 +53,5 @@ li span.tag {
 }
 article.bibliography p {
   text-align: left;
+  overflow-wrap: break-word;  
 }
